@@ -2,6 +2,123 @@
  *   Copyright (c) 2025 David Kirkcaldy
  *   All rights reserved.
  */
-html {
-    font-size: 16px;
+
+ /* Header settings */
+ header {
+    background-color: white;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    height: 64px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    z-index: 100;
+    width: 100%;
+}
+
+a {
+    font-family: "Century Gothic", sans-serif;
+    color: darkgray;
+}
+
+.page-font {
+    font-family: "Century Gothic", sans-serif;
+    color: black;
+}
+
+.logo {
+    display:flex;
+    justify-self: space-between;
+    align-items: center;
+}
+
+.logo img {
+    float: left;
+    height: 2rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.logo h1 span {
+    font-weight: 300;
+    color: gray;
+}
+
+.nav-links {
+    display:flex;
+    align-items: center;
+    /* This stops the right nav bar 
+    being too far to right, causing it to be off the page */
+    right:0;
+    position: fixed;
+}
+
+.nav-links ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin:0;
+}
+
+.nav-links li {
+    float: left;
+    padding: 1px;
+    margin: 0.5rem;
+}
+
+/* sign-up section */
+main {
+    position: relative;
+    top: 64px;
+}
+
+.banner {
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.banner-container {
+    float: left;
+    margin: 2rem 1.5rem;
+}
+
+.banner-container img {
+    /* Made image resizable */
+    width: 100%;
+    height: auto;
+}
+
+.sign-up {
+    float:right;
+    align-items: center;
+    justify-items: left;
+}
+
+.sign-up h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sign-up p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.sign-up button {
+    /* This was suggested by co-pilot, so left it as is. */
+    background-color: lightblue;
+    border: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+
 }
