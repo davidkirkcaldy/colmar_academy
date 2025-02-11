@@ -81,6 +81,8 @@ main {
     background-color: lightgrey;
     display: flex;
     align-items: center;
+    position: relative;
+    top: 0;
 }
 
 .banner-container {
@@ -121,4 +123,75 @@ main {
     border-radius: 5px;
     cursor: pointer;
 
+}
+
+/* Information section */
+
+/* Information left panel */
+.left-main {
+    display: flex-inline;
+    max-width: 60%;
+    background-color: white;
+    align-items: center;
+    justify-items: left;
+}
+
+.left-image {
+    float: left;
+    margin: 2rem 1.5rem;
+}
+
+.left-image img {
+    /* Made image resizable */
+    width: 100%;
+    height: auto;
+}
+
+.left-text {
+    float:right;
+    align-items: center;
+    justify-items: left;
+    margin-left: 1.5rem;
+}
+
+/* Information right panel */
+.info-container {
+    background-color: lightgrey;
+    display: flex-inline;
+    align-items: left;
+    direction: column;
+    max-width: 40%;
+}
+
+.info-item {
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.info-image {
+    float: left;
+    margin: 1rem;
+    max-width: 35%;
+}
+
+.info-image img {
+    /* Made image resizable */
+    width: 100%;
+    height: auto;
+}
+
+.info-text {
+    float:right;
+    align-items: center;
+    justify-items: left;
+    margin-left: 1.5rem;
+    max-width: 65%;
+}
+
+.information{
+    display: flex;
+    align-items: center;
+    justify-items: left;
+    margin: 2rem 1.5rem;
 }
