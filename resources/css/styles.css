@@ -204,7 +204,7 @@ main {
 
 .information{
     display: flex;
-    align-items: center;
+    align-items:start;
     justify-items: left;
     margin: 2rem 1.5rem;
 }
@@ -242,4 +242,72 @@ main {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+}
+
+/* the following two sections should be changed
+    the merge them and the corresponding image elements */
+.left-video {
+    float: left;
+    margin: 0;
+}
+
+.left-video video {
+    /* Made image resizable using % */
+    width: 100%;
+    height: auto;
+}
+
+#thesis-section {
+    background-color: white;
+    padding: 2rem;
+}
+
+#thesis-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer settings */
+/* TODO: The setting for the footer
+has been copied from the header and both
+need to be rewritten/simplified */
+footer {
+    border-top: 1px solid lightgray;
+    background-color: white;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom:0;
+    height: 64px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 100%;
+}       
+
+
+.footer-links {
+    display:flex;
+    align-items: center;
+    /* This stops the right nav bar 
+    being too far to right, causing it to be off the page */
+    right:10px;
+}
+
+.copy-right {
+    float: left;
+}
+
+.footer-links ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin:0;
+}
+
+.footer-links li {
+    float: left;
+    padding: 1px;
+    margin: 0.5rem;
 }
